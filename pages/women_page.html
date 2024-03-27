@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="nav-content">
+      <ul class="nav-left">
+        <li><a href="men_page.html">Men</a></li>
+        <li><a href="women_page.html">Women</a></li>
+        <li><a href="sale_page.html">Sale</a></li>
+      </ul>
+      <div class="logo">
+        <h1><a href="/index.html"><img src="/images/logo.png" alt=""></a></h1>
+      </div>
+      <div class="nav-right">
+        <a href="/pages/tracking_page.html"><span class="lucide--truck"></span></a>
+        <a href="help_page.html"><span class="lucide--help-circle"></span></a>
+        <a href="cart_page.html"><span class="lucide--shopping-cart"></span></a>
+      </div>
+    </div>
+  </div>
+  <div class="womens-header">
+    <div class="womens-shoes">
+      <h2>Women's Shoes</h2>
+    </div>
+    <div class="sort-by">
+      <div class="sort-container">
+        <button id="sort-btn">Sort By: Newest</button>
+        <div class="dropdown-content">
+          <a href="#" id="newest-option" onclick="wSortNewest(event)">Newest</a>
+          <a href="#" id="high-to-low-option" onclick="wSortHighToLow(event)">Price High to Low</a>
+          <a href="#" id="low-to-high-option" onclick="wSortLowToHigh(event)">Price Low to High</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="womens-main">
+    <a class="womens-item-a" href="/favs/airjordan1low.html">
+      <div class="womens-item">
+        <img src="/images/fav1.png" alt="" srcset="">
+        <div class="womens-item-content">
+          <h3>Air Jordan 1 Low</h3>
+          <div class="mrprice">
+            <h2 class="mens-mrp">MRP : ₹</h2>
+            <h2 class="womens-item-price">10,295</h2>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a class="womens-item-a" href="/new_arrivals/nikeairforce1.html">
+      <div class="womens-item">
+        <img src="/images/na4.png" alt="" srcset="">
+        <div class="womens-item-content">
+          <h3>Nike Air Force 1 '07 Essential</h3>
+            <div class="mrprice">
+              <h2 class="mens-mrp">MRP : ₹</h2>
+              <h2 class="womens-item-price">9,695</h2>
+            </div>
+        </div>
+      </div>
+    </a>
+    <a class="womens-item-a" href="/new_arrivals/nikeairmaxw1.html">
+      <div class="womens-item">
+        <img src="/images/na9.png" alt="" srcset="">
+        <div class="womens-item-content">
+          <h3>Nike Air Max 1</h3>
+          <div class="mrprice">
+            <h2 class="mens-mrp">MRP : ₹</h2>
+            <h2 class="womens-item-price">12,795</h2>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a class="womens-item-a" href="/new_arrivals/nikeairmaxlv8.html">
+      <div class="womens-item">
+        <img src="/images/na2.png" alt="" srcset="">
+        <div class="womens-item-content">
+          <h3>Nike Air Max 90 LV8</h3>
+          <div class="mrprice">
+            <h2 class="mens-mrp">MRP : ₹</h2>
+            <h2 class="womens-item-price">12,795</h2>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a class="womens-item-a" href="/new_arrivals/nikeairmaxsc.html">
+      <div class="womens-item">
+        <img src="/images/na8.png" alt="" srcset="">
+        <div class="womens-item-content">
+          <h3>Nike Air Max SC</h3>
+          <div class="mrprice">
+            <h2 class="mens-mrp">MRP : ₹</h2>
+            <h2 class="womens-item-price">7,095</h2>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a class="womens-item-a" href="/new_arrivals/nikegamma2.html">
+      <div class="womens-item">
+        <img src="/images/na7.png" alt="" srcset="">
+        <div class="womens-item-content">
+          <h3>Nike Gamma Force</h3>
+          <div class="mrprice">
+            <h2 class="mens-mrp">MRP : ₹</h2>
+            <h2 class="womens-item-price">8,495</h2>
+          </div>
+        </div>
+      </div>
+    </a>
+    <a class="womens-item-a" href="/new_arrivals/nikegamma1.html">
+      <div class="womens-item">
+        <img src="/images/na5.png" alt="" srcset="">
+        <div class="womens-item-content">
+          <h3>Nike Gamma Force</h3>
+          <div class="mrprice">
+            <h2 class="mens-mrp">MRP : ₹</h2>
+            <h2 class="womens-item-price">8,495</h2>
+          </div>
+        </div>
+      </div>
+    </a>
+    
+  </div>
+  <div class="footer">
+    <div class="footer-menu">
+      <ul>
+        <a href="help_page.html">
+          <li>Send Us Feedback</li>
+        </a>
+        <a href="about_page.html">
+          <li>About ALL NIKE'S</li>
+        </a>
+      </ul>
+      <ul>
+        <a href="help_page.html">
+          <li>Get Help</li>
+        </a>
+        <a href="tracking_page.html">
+          <li>Order Status</li>
+        </a>
+        <a href="help_page.html">
+          <li>Delivery</li>
+        </a>
+        <a href="help_page.html">
+          <li>Returns</li>
+        </a>
+      </ul>
+      </ul>
+    </div>
+  </div>
+  <div class="rights">
+    <p>© 2024 ALL NIKE'S, Inc. All Rights Reserved</p>
+  </div>
+  <script src="/index.js"></script>
+</body>
+
+</html>

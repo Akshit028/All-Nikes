@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="nav-content">
+      <ul class="nav-left">
+        <li><a href="men_page.html">Men</a></li>
+        <li><a href="women_page.html">Women</a></li>
+        <li><a href="sale_page.html">Sale</a></li>
+      </ul>
+      <div class="logo">
+        <h1><a href="/index.html"><img src="/images/logo.png" alt=""></a></h1>
+      </div>
+      <div class="nav-right">
+        <a href="/pages/tracking_page.html"><span class="lucide--truck"></span></a>
+        <a href="help_page.html"><span class="lucide--help-circle"></span></a>
+        <a href="cart_page.html"><span class="lucide--shopping-cart"></span></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="cart-main">
+    <div class="cart-container">
+      <div class="cart-container-left">
+        <h1>Cart</h1>
+        <div id="cart-container-left-section" class="cart-container-left-section">
+          <div class="section-left" id="section-left">
+            <img id="productImg" src="" alt="">
+
+          </div>
+          <div class="section-right">
+            <div class="section-right-top">
+              <p id="productName"></p>
+              <div class="section-right-top-mid">
+                <p id="rs">MRP : ₹ </p>
+                <p id="productPrice"></p>
+              </div>
+            </div>
+
+            <p id="productCat"></p>
+
+            <div class="section-right-bottom">
+              <p id="selectedSizeContainer"></p>
+              <div id="quantitySection">
+                <label id=" labelQuantity" for="quantity">Quantity:</label>
+                <select name="quantity" id="quantity">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                </select>
+              </div>
+            </div>
+            <button id="delete">Remove</button>
+
+          </div>
+        </div>
+        <hr>
+        <p id="note">Note : Checkout once you've added the item to cart or else the cart will be cleared when you leave
+          the page.</p>
+
+      </div>
+      <div id="summary" class="cart-container-right">
+        <h1>Summary</h1>
+        <p>Total</p>
+        <hr>
+        <h2 id="totalPrice"></h2>
+        <hr>
+        <div id="btncontainer">
+          <button onclick="checkoutSection()" id="checkout">Checkout</button>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="checkoutContainer" id="checkoutContainer">
+      <div class="title">
+        <h2>CheckOut</h2>
+      </div>
+      <div class="d-flex">
+        <form action="" method="">
+          <label>
+            <span class="fname">First Name <span class="required">*</span></span>
+            <input type="text" name="fname">
+          </label>
+          <label>
+            <span class="lname">Last Name <span class="required">*</span></span>
+            <input type="text" name="lname">
+          </label>
+          <label>
+            <span>Country <span class="required">*</span></span>
+            <input type="text" name="country">
+          </label>
+          <label>
+            <span>Address <span class="required">*</span></span>
+            <input type="text" name="houseadd" required>
+          </label>
+          <label>
+            <span>Town / City <span class="required">*</span></span>
+            <input type="text" name="city">
+          </label>
+          <label>
+            <span>State <span class="required">*</span></span>
+            <input type="text" name="state">
+          </label>
+          <label>
+            <span>Postcode / ZIP <span class="required">*</span></span>
+            <input type="text" name="city">
+          </label>
+          <label>
+            <span>Phone <span class="required">*</span></span>
+            <input type="tel" name="city">
+          </label>
+          <label>
+            <span>Email Address <span class="required">*</span></span>
+            <input type="email" name="city">
+          </label>
+        </form>
+        <div class="Yorder">
+          <h3>Payment Gateway</h3>
+          <div class="credit-card">
+            <div class="form-group">
+              <label for="card-number">Card Number:</label>
+              <input type="text" id="card-number" name="card-number" placeholder="**** **** **** 1234">
+            </div>
+            <div class="form-group">
+              <label for="card-holder">Card Holder:</label>
+              <input type="text" id="card-holder" name="card-holder" placeholder="John Doe">
+            </div>
+            <div class="form-group">
+              <label for="expiration">Expiration Date:</label>
+              <input type="text" id="expiration" name="expiration" placeholder="MM/YY">
+            </div>
+            <div class="form-group">
+              <label for="cvv">CVV:</label>
+              <input type="text" id="cvv" name="cvv" placeholder="123">
+            </div>
+          </div>        
+          
+          <button onclick="placeOrder()"  id="placeOrderBtn" class="placeorder" type="button">Place Order</button>
+          <h3 class="confirmation-msg" id="confirmation-msg"></h3>
+        </div><!-- Yorder -->
+        
+      </div>
+      
+    </div>
+  </div>
+ 
+  <div class="footer">
+    <div class="footer-menu">
+      <ul>
+
+        <a href="help_page.html">
+          <li>Send Us Feedback</li>
+        </a>
+        <a href="about_page.html">
+          <li>About ALL NIKE'S</li>
+        </a>
+      </ul>
+      <ul>
+        <a href="help_page.html">
+          <li>Get Help</li>
+        </a>
+        <a href="tracking_page.html">
+          <li>Order Status</li>
+        </a>
+        <a href="help_page.html">
+          <li>Delivery</li>
+        </a>
+        <a href="help_page.html">
+          <li>Returns</li>
+        </a>
+      </ul>
+      </ul>
+    </div>
+  </div>
+  <div class="rights">
+    <p>© 2024 ALL NIKE'S, Inc. All Rights Reserved</p>
+  </div>
+
+  <script src="/index.js"></script>
+  <script src="/pages/cart.js"></script>
+</body>
+
+</html>
