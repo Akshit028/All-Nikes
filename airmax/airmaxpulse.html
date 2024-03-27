@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="nav-content">
+            <ul class="nav-left">
+                <li><a href="/pages/men_page.html">Men</a></li>
+                <li><a href="/pages/women_page.html">Women</a></li>
+                <li><a href="/pages/sale_page.html">Sale</a></li>
+            </ul>
+            <div class="logo">
+                <h1><a href="/index.html"><img src="/images/logo.png" alt=""></a></h1>
+            </div>
+            <div class="nav-right">
+                <a href="/pages/tracking_page.html"><span class="lucide--truck"></span></a>
+                <a href="/pages/help_page.html"><span class="lucide--help-circle"></span></a>
+                <a href="/pages/cart_page.html"><span class="lucide--shopping-cart"></span></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="item-container">
+            <div class="item-container-top">
+                <div class="item-container-top-left">
+                    <div class="carousel-container">
+                        <div class="mySlides">
+                            <img src="/images/items/air_max_pulse/ampu1.jpeg" alt="slide" />
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="/images/items/air_max_pulse/ampu2.jpeg" alt="slide" />
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="/images/items/air_max_pulse/ampu3.jpeg" alt="slide" />
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="/images/items/air_max_pulse/ampu4.jpeg" alt="slide" />
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="/images/items/air_max_pulse/ampu5.jpeg" alt="slide" />
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="/images/items/air_max_pulse/ampu6.jpeg" alt="slide" />
+                        </div>
+                        <!-- Next and previous buttons -->
+                        <a class="prev" onclick="prevSlide()"><span class="item-left"></span></a>
+                        <a class="next" onclick="nextSlide()"><span class="item-right"></span></a>
+
+                        <!-- The dots/circles -->
+                        <div class="dots-container">
+                            <span class="dots" onclick="currentSlide(1)"></span>
+                            <span class="dots" onclick="currentSlide(2)"></span>
+                            <span class="dots" onclick="currentSlide(3)"></span>
+                            <span class="dots" onclick="currentSlide(4)"></span>
+                            <span class="dots" onclick="currentSlide(5)"></span>
+                            <span class="dots" onclick="currentSlide(6)"></span>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="item-container-top-right">
+                    <div class="item-container-top-right-content">
+                        <h1 id="productName">Nike Air Max Pulse</h1>
+                        <h3 id="productCat">Men's Shoes</h3>
+                        <h2 id="mrp">MRP : ₹ </h2>
+                        <h2 id="productPrice">13,995</h2>
+                        <h5>incl. of taxes <br> (Also includes all applicable duties)</h5>
+                        <h4>Select Size</h4>
+                        <div class="box-container">
+                            <div class="box" onclick="selectBox(this)">UK 6</div>
+                            <div class="box" onclick="selectBox(this)">UK 6.5</div>
+                            <div class="box" onclick="selectBox(this)">UK 7</div>
+                            <div class="box" onclick="selectBox(this)">UK 7.5</div>
+                            <div class="box" onclick="selectBox(this)">UK 8</div>
+                            <div class="box" onclick="selectBox(this)">UK 8.5</div>
+                            <div class="box" onclick="selectBox(this)">UK 9</div>
+                            <div class="box" onclick="selectBox(this)">UK 9.5</div>
+                            <div class="box" onclick="selectBox(this)">UK 10</div>
+                            <div class="box" onclick="selectBox(this)">UK 10.5</div>
+                            <div class="box" onclick="selectBox(this)">UK 11</div>
+                            <div class="box" onclick="selectBox(this)">UK 12</div>
+                        </div>
+                        <div class="add-to-cart">
+                            <h3 id="sizeErrorMessage">Please select a size </h3>
+                            <button id="addToCart" onclick="addToCart()">Add to Cart</button>
+                            
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="item-container-bottom">
+                <div class="item-container-bottom-left">
+                    <h2>Product Information</h2>
+                    <p class="item-info">
+                        Mixing one part urban to one part tough, the Air Max Pulse brings an underground touch to the
+                        iconic Air Max line. Its textile-wrapped midsole and vacuum-sealed accents boost its street
+                        cred, while colours inspired by the grime music scene keep it rough around the edges.
+                        Point-loaded Nike Air cushioning—revamped from the incredibly plush Air Max 270—delivers the
+                        comfort you've come to trust whether you're running errands or hitting the club.
+                    </p>
+                </div>
+                <div class="item-container-bottom-right">
+                    <h2>Delivery & Returns</h2>
+                    <p>
+                        All purchases are subject to delivery fees.
+                    </p>
+                    <p>
+                        Standard delivery 4–9 business days
+                    </p>
+                    <p>
+                        Orders are processed and delivered Monday–Friday (excluding public holidays)
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-menu">
+            <ul>
+
+                <a href="/pages/help_page.html">
+                    <li>Send Us Feedback</li>
+                </a>
+                <a href="/pages/about_page.html">
+                    <li>About ALL NIKE'S</li>
+                </a>
+            </ul>
+            <ul>
+                <a href="/pages/help_page.html">
+                    <li>Get Help</li>
+                </a>
+                <a href="/pages/tracking_page.html">
+                    <li>Order Status</li>
+                </a>
+                <a href="/pages/help_page.html">
+                    <li>Delivery</li>
+                </a>
+                <a href="/pages/help_page.html">
+                    <li>Returns</li>
+                </a>
+            </ul>
+            </ul>
+        </div>
+    </div>
+    <div class="rights">
+        <p>© 2024 ALL NIKE'S, Inc. All Rights Reserved</p>
+    </div>
+
+    <script src="/index.js"></script>
+</body>
+
+</html>
