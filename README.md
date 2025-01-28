@@ -47,13 +47,6 @@ After placing order user is redirected to a page where user gets tracking ID and
 
 During this project, I've picked up important skills and a better understanding of complex ideas, which improved my logical thinking.
 
-## 💭 Issues
-
-- Website is not responsive.
-- There is no user login page or authentication.
-- There is no external database.
-- There is no admin panel.
-- There is no secure payment checkout.
 
 
 ### 📸 Demo Images  
